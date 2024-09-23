@@ -1,0 +1,13 @@
+
+.img-size {
+    height: 400px;
+    width: 300px;
+    padding: 40px;
+}
+.content {
+    padding: 40px;
+}
+.content .title {
+    font-size: 30px;
+    font-weight: bold;
+}
