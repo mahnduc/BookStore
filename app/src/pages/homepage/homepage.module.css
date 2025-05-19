@@ -1,0 +1,17 @@
+.homepage {
+  color: #fff;
+  padding: 2rem;
+}
+
+.books {
+  display: flex;
+  gap: 1rem;
+}
+
+.bookCard {
+  background-color: #2f2f2f;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 150px;
+  text-align: center;
+}

@@ -1,0 +1,111 @@
+.header {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+  background-image: linear-gradient(rgba(36, 36, 36, 0.9), rgba(36, 36, 36, 0.9)), url('/images/book-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid #f1f1f1;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.highlight {
+  color: #0d6efd;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.header p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 10rem;
+}
+
+.btn,
+.btnOutline {
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn {
+  background-color: #f1f1f1;
+  color: #242424;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #f1f1f1;
+}
+
+.btnOutline {
+  background: none;
+  border: 1px solid #f1f1f1;
+  color: #f1f1f1;
+}
+
+.btnOutline:hover {
+  background-color: #f1f1f1;
+  color: #242424;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+}
+.aboutMe {
+  width: 100vw;
+  padding: 4rem 2rem;
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  text-align: center;
+  border-top: 2px solid #f1f1f1;
+  border-bottom: 2px solid #f1f1f1;
+  box-sizing: border-box;
+  margin: 0;         /* Xóa margin trái/phải không cần thiết */
+  position: relative; /* Giúp ổn định bố cục nếu cần */
+  left: 50%;          /* Dịch vào giữa màn hình */
+  transform: translateX(-50%); /* Dịch ngược lại nửa chiều rộng để canh giữa */
+}
+
+.aboutMe h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.aboutMe p {
+  max-width: 900px;
+  margin: 0 auto 1.5rem auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ccc;
+  text-align: justify;
+}

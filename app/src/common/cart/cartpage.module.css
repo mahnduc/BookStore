@@ -1,0 +1,21 @@
+.checkoutButton {
+  background-color: #28a745; /* xanh lá đậm */
+  color: #fff;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 12px;
+}
+
+.checkoutButton:hover {
+  background-color: #218838;
+}
+
+.checkoutButton:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}

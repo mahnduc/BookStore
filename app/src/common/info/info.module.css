@@ -1,0 +1,155 @@
+.profileFrame {
+  max-width: 1200px;  /* Giới hạn độ rộng tối đa */
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ddd; /* Màu chữ sáng cho nền tối */
+  background-color: #242424;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #eee; /* Chữ sáng hơn */
+}
+
+.profileGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.profileLeft {
+  flex: 1 1 500px;
+  max-width: 600px;
+  background-color: #2f2f2f; /* nền nhạt hơn một chút so với #242424 */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.6);
+}
+
+.avatarPlaceholder {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 25px auto;
+  border-radius: 50%;
+  background-color: #444; /* tối hơn nền nhưng sáng hơn #242424 */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.noAvatar {
+  color: #aaa; /* màu chữ nhẹ nhàng */
+  font-size: 0.9rem;
+}
+
+.fieldGroup {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldGroup label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ccc; /* màu nhạt hơn chữ chính */
+}
+
+.fieldGroup input {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1.5px solid #555; /* viền tối, hợp nền tối */
+  border-radius: 6px;
+  background-color: #3a3a3a; /* nền input tối */
+  color: #eee; /* chữ sáng */
+  transition: border-color 0.2s ease;
+}
+
+.fieldGroup input::placeholder {
+  color: #999; /* placeholder nhẹ */
+}
+
+.fieldGroup input:focus {
+  border-color: #3399ff; /* màu xanh sáng nổi bật */
+  outline: none;
+  background-color: #444;
+  color: #fff;
+}
+
+.profileActions {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.profileActions button {
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #3399ff; /* màu xanh chủ đạo */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.profileActions button:hover:not(:disabled) {
+  background-color: #267acc;
+}
+
+.profileActions button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.profileActions .cancelBtn {
+  background-color: #666;
+  color: #ddd;
+}
+
+.loading,
+.error,
+.success {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.1rem;
+}
+
+.error {
+  color: #ff5555; /* đỏ nhẹ cho lỗi */
+}
+
+.success {
+  color: #55ff88; /* xanh lá nhẹ cho thành công */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profileGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profileLeft {
+    max-width: 100%;
+  }
+}
